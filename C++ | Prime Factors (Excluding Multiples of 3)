@@ -15,9 +15,13 @@ int main() {
         }
         else
         {
-            while (number % counter == 0) 
+            if (number % counter == 0) 
             {
                 cout << counter << " ";
+            }
+            
+            while (number % counter == 0) 
+            {
                 number /= counter;
             }
         }
