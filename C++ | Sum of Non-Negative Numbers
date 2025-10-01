@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() 
+{
+    int number, sum = 0;
+
+    while (number != 0)
+    {
+        cout << "Enter a number: ";
+        cin >> number;
+        
+        if (number <= 0)
+        {
+            continue;
+        }
+        else
+        {
+            sum = sum + number;
+        }
+    }
+    
+    cout << "Sum: " << sum;
+}
