@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
+    
+    for (int counter = 0; counter <= number; counter ++)
+    {
+        if (counter % 2 == 0)
+        {
+            if (counter == 10)
+            {
+                continue;
+            }
+            else
+            {
+                cout << counter << " ";
+            }
+        }
+        else
+        {
+            continue;
+        }
+    }
+}
