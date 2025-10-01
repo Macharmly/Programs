@@ -1,0 +1,29 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() 
+{
+    int number = -1, storage = 0, count = 0;
+    float average = 0.00;
+    
+    while (number != 0)
+    {
+        cout << "Enter a number: ";
+        cin >> number;
+        
+        if (number <= 0)
+        {
+            continue;
+        }
+        else
+        {
+            storage = storage + number;
+            count = count + 1;
+        }
+    }
+    
+    average = static_cast<float>(storage) / count;
+    cout << fixed << setprecision(2);
+    cout << "Average: " << average;
+}
