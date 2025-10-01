@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int number, starter = 0;
+    cout << "Enter a number: ";
+    cin >> number;
+    
+    for (int counter = 1; counter <= number; counter++)
+    {
+        starter = starter + 1;
+        if (starter == 4)
+        {
+            continue;
+        }
+        else
+        {
+            cout << starter << " ";
+        }
+    }
+}
