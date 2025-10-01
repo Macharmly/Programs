@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    string word;
+    bool isPalindrome = false;
+    
+    while (!isPalindrome)
+    {
+        cout << "Enter a word: ";
+        cin >> word;
+        
+        isPalindrome = true;
+        int left = 0;
+        int right = word.length() - 1;
+
+        while (left < right) {
+            if (word[left] != word[right]) {
+                isPalindrome = false;
+                break;
+            }
+            else
+            {
+                left++;
+                right--;
+            }
+        }
+    }
+    
+    cout << "Palindrome found!";
+}
